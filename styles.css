@@ -16,7 +16,7 @@ header{
     text-align:center;
 }
 .nav-bar{
-    background-color:blue;
+    background-color:darkblue;
     display: flex;
     justify-content: space-around;
     list-style-type: none;
