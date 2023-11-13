@@ -7,6 +7,8 @@ header{
     align-items: center;
     background-color: #88aaff;
     padding-top: 5px;
+    position: sticky;
+    top:0;
 }
 .heading{
     color:black;
@@ -69,4 +71,19 @@ footer{
     padding-left: 5px;
     border: #000000 2px;
     border-radius: 100px;
+}
+.content form{
+    width: max-content;
+    margin: auto;
+    padding-top: 30px;
+}
+.content form fieldset{
+    padding: 10px;
+}
+.content form input, label{
+    font-size: 20px;
+}
+.content form legend{
+    font-size: 30px;
+    
 }
