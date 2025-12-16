@@ -1,0 +1,212 @@
+/* ===========================
+   1. GLOBAL & TYPOGRAPHY
+   =========================== */
+   :root {
+    --primary-color: #00ADB5;     /* Your Tech Teal */
+    --primary-hover: #008c93;
+    
+    /* 1. New Custom Accent Color (e.g., Bright Orange) */
+    --accent-orange: #FF5733;     
+
+    --green-color: #28a745;       /* Bootstrap Success Green */
+
+    /* 2. Overriding a Bootstrap Semantic Color (optional) */
+    --bs-secondary: #4a5568;      /* Dark Slate Gray instead of default Bootstrap Gray */
+    --bs-secondary-hover: #373f4d; 
+    
+    --dark-bg: #111111;
+    --light-bg: #f8f9fa;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--light-bg);
+    /* Subtle Grid Pattern */
+    background-image: radial-gradient(#dee2e6 1px, transparent 1px);
+    background-size: 20px 20px;
+    color: #333;
+    font-family: 'Poppins', sans-serif; /* Default text font */
+}
+
+/* "Hacker" Font for headings and brand */
+h1, h2, h3, h4, h5, .navbar-brand, .badge {
+    font-family: 'Fira Code', monospace; 
+}
+
+/* Offset for sticky navbar */
+section {
+    scroll-margin-top: 80px;
+}
+
+/* ===========================
+   2. NAVBAR
+   =========================== */
+.navbar {
+    background: rgba(17, 17, 17, 0.85) !important; /* Matches hero dark */
+    backdrop-filter: blur(10px); 
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+/* ===========================
+   3. HERO SECTION
+   =========================== */
+#hero {
+    background-color: var(--dark-bg);
+    color: #ffffff;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column; /* Allows us to stack content */
+    align-items: center;
+    justify-content: center;
+    position: relative; /* Needed for the wave */
+    padding-bottom: 50px; /* Space for the wave */
+}
+
+#hero .lead {
+    color: rgba(255, 255, 255, 0.8) !important; 
+}
+
+/* ===========================
+   4. COMPONENTS (Cards, Buttons)
+   =========================== */
+/* Custom Teal Button */
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    transition: all 0.2s ease;
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-hover);
+    border-color: var(--primary-hover);
+    transform: translateY(-2px); /* Tiny lift on hover */
+}
+
+/* Card Styling */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 15px; 
+    overflow: hidden; 
+    border-top: 4px solid red; /* The Teal Accent Line */
+    border-radius: 12px; /* Slightly softer corners */
+}
+
+.card:hover {
+    transform: translateY(-10px); 
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15) !important; 
+}
+
+/* Force all card images to be the same size */
+.card-img-top {
+    height: 440px; /* Sets a fixed height */
+    object-fit: cover; /* Crops the image to fit the box without distorting it */
+    width: 100%; /* Ensures it fills the width */
+}
+
+.card-img-bottom {
+    border-top: 1px solid #dee2e6; /* Light separator line */
+}
+
+/* Experience Timeline Line */
+#experience .border-start {
+    border-color: #dee2e6 !important;
+}
+
+#projects .card {
+    border-top: 4px solid black; /* Teal Accent Line */
+    border-radius: 12px; /* Slightly softer corners */
+    img {
+        border-bottom: 1px solid #dee2e6; /* Light separator line */
+    }
+}
+#Remote:hover {
+    transform: translateY(-10px);
+    /* This creates a Teal Glow behind the card */
+    box-shadow: 0 20px 40px red !important; 
+    border-color: red;
+}
+
+#moody-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px purple!important;
+    border-color: purple!important;
+}
+
+#deepfake:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px blue!important;
+    border-color: blue!important;
+}
+
+/* ===========================
+   5. SOCIAL ICONS
+   =========================== */
+.social-icon {
+    transition: transform 0.2s, color 0.2s;
+}
+
+.social-icon:hover {
+    transform: scale(1.2);
+    color: var(--primary-color) !important;
+}
+
+/* ===========================
+   CUSTOM ICON BOXES
+   =========================== */
+
+   .icon-box {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px; /* Soft square corners */
+    transition: transform 0.3s ease;
+}
+
+/* Hover Effect: Rotate slightly */
+.card:hover .icon-box {
+    transform: rotate(10deg);
+}
+
+/* 1. Primary Box (Teal - Matches your theme) */
+.icon-box-primary {
+    background-color: lightgray; 
+    color: black;
+}
+
+/* GPA */
+.icon-box-warning {
+    background-color: lightgray;
+    color: yellow;
+}
+
+/* 3. Success Box (Green for Hardware) */
+.icon-box-success {
+    background-color: lightgrey;
+    color: green;
+}
+
+/* Paste this into css/style.css if you haven't yet! */
+.icon-box {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+}
+
+
+/*utility colors*/
+/* Sets background color */
+.bg-accent-orange {
+    background-color: var(--accent-orange);
+}
+
+.bg-green-color{
+    background-color: var(--green-color);
+}
