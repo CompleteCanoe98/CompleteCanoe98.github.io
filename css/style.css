@@ -129,6 +129,12 @@ section {
     border-color: red;
 }
 
+#Drone:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px green !important;
+    border-color: green !important;
+}
+
 #moody-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 20px 40px purple!important;
