@@ -35,5 +35,6 @@ function typeEffect() {
     setTimeout(typeEffect, typeSpeed);
 }
 
-// Start the effect
-document.addEventListener('DOMContentLoaded', typeEffect);
+
+// Start the effect directly 
+typeEffect();
