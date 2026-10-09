@@ -1,5 +1,11 @@
+// main.js
 const textElement = document.getElementById('typewriter');
-const phrases = ["Machine Learning Models.", "Network Protocols.", "Embedded Systems.", "Python Applications."];
+const phrases = [
+    "Autonomous Drone Systems.",
+    "Computer Vision Pipelines.",
+    "Robotics & ROS.",
+    "Deep Learning Models."
+];
 let phraseIndex = 0;
 let charIndex = 0;
 let isDeleting = false;
@@ -15,20 +21,15 @@ function typeEffect() {
         charIndex++;
     }
 
-    if (isDeleting){
-        typeSpeed = 50;
-    }
-    else{
-        typeSpeed = 100;
-    }
+    let typeSpeed = isDeleting ? 45 : 90;
 
-    if (isDeleting == false && charIndex == currentPhrase.length) {
+    if (!isDeleting && charIndex === currentPhrase.length) {
         isDeleting = true;
-        typeSpeed = 2000; // Wait 2 seconds before deleting
-    } else if (isDeleting == true && charIndex == 0) {
+        typeSpeed = 2200; // Pause at completed phrase
+    } else if (isDeleting && charIndex === 0) {
         isDeleting = false;
         phraseIndex = (phraseIndex + 1) % phrases.length;
-        typeSpeed = 500;
+        typeSpeed = 400;
     }
 
     setTimeout(typeEffect, typeSpeed);

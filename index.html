@@ -1,3 +1,4 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,9 +7,7 @@
     <title>Nathaniel DeLeon</title>
     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    
     <link rel="stylesheet" href="css/style.css">
-
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -23,17 +22,16 @@
             </button>
     
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto"> <li class="nav-item">
+                <ul class="navbar-nav ms-auto"> 
+                    <li class="nav-item">
                         <a class="nav-link" href="#hero">Home</a>
                     </li>
-
                     <li class="nav-item">
                         <a class="nav-link" href="#about">About Me</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#experience">Experience</a>
                     </li>
-
                     <li class="nav-item">
                         <a class="nav-link" href="#projects">Projects</a>
                     </li>
@@ -48,7 +46,7 @@
         </div>
     </nav>
 
-    <section id="hero" class="text-center py-5">
+    <section id="hero" class="text-center py-5 position-relative">
         <div class="container">
             <h1 class="fw-bold display-4 mb-3">Hi, I'm Nathaniel DeLeon</h1>
             
@@ -56,13 +54,12 @@
                 Senior Computer Scientist at UTRGV.<br>
                 I build with <span id="typewriter" class="fw-bold text-warning"></span>
             </p>
-
-            <img src="assets/ProfilePicture.JPG" alt="Nathaniel DeLeon" class="rounded-circle mb-4" width="300" height="300">
-            
-            
+    
+            <img src="assets/ProfilePicture.jpeg" alt="Nathaniel DeLeon" class="rounded-circle mb-4" width="300" height="300" style="object-fit: cover; object-position: center 7%;">
         </div>
+        
         <div style="position: absolute; bottom: 0; left: 0; width: 100%; overflow: hidden; line-height: 0;">
-            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none" style="position: relative; display: block; width: calc(138% + 1.3px); height: 68px;">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="xMidYMax slice" style="position: relative; display: block; width: calc(138% + 1.3px); height: 68px;">
                 <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" fill="#f8f9fa"></path>
             </svg>
         </div>
@@ -75,21 +72,22 @@
                 <div class="col-md-7 mb-4 mb-md-0">
                     <h2 class="fw-bold mb-3 display-6">About Me</h2>
                     <p class="lead text-secondary">
-                        I am a Software Developer at the <strong class="text-dark">University of Texas Rio Grande Valley</strong>, specializing in Machine Learning and Network Architecture.
+                        I am a Computer Science senior and Luminary Scholar at the <strong class="text-dark">University of Texas Rio Grande Valley</strong>, specializing in Computer Vision, Autonomous Systems, and Applied Machine Learning.
                     </p>
                     <p class="text-secondary">
-                        Beyond software, I am deeply interested in the intersection of hardware and code. I am actively expanding my skills in <strong>Embedded Systems</strong> and plan to pursue a Master's Degree in Electrical Engineering to bridge the gap between software and physical hardware.
+                        My work centers on the boundary between physical hardware and intelligent systems—from developing Natural Language driven target-tracking pipelines for autonomous UAVs in Gazebo and ROS to integrating 6 Degree of Freedom robotic manipulators with real-time vision models. I plan to pursue a Master's Degree in Computer Science to further bridge the gap between software and physical hardware.
                     </p>
                     
                     <div class="mt-4">
                         <p class="fw-bold small text-uppercase text-muted mb-2">Core Competencies</p>
                         <span class="badge bg-light text-dark border me-1">Python</span>
                         <span class="badge bg-light text-dark border me-1">C++</span>
-                        <span class="badge bg-light text-dark border me-1">Neural Networks</span>
-                        <span class="badge bg-light text-dark border">Computer Vision</span>
-                        <span class="badge bg-light text-dark border">Network Development</span>
-
-
+                        <span class="badge bg-light text-dark border me-1">PyTorch</span>
+                        <span class="badge bg-light text-dark border me-1">OpenCV</span>
+                        <span class="badge bg-light text-dark border me-1">ROS & Gazebo</span>
+                        <span class="badge bg-light text-dark border me-1">YOLO / YOLO-World</span>
+                        <span class="badge bg-light text-dark border me-1">Robotics (uFactorySDK)</span>
+                        <span class="badge bg-light text-dark border">Socket / UDP Streaming</span>
                     </div>
                 </div>
     
@@ -100,8 +98,8 @@
                                 <i class="fas fa-graduation-cap fa-xl"></i>
                             </div>
                             <div>
-                                <h5 class="fw-bold mb-0">Education</h5>
-                                <small class="text-secondary">B.S. Computer Science</small>
+                                <h5 class="fw-bold mb-0">B.S. Computer Science</h5>
+                                <small class="text-secondary">UT Rio Grande Valley · Class of 2026</small>
                             </div>
                         </div>
                     
@@ -111,17 +109,17 @@
                             </div>
                             <div>
                                 <h5 class="fw-bold mb-0">4.0 GPA</h5>
-                                <small class="text-secondary">Academic Excellence</small>
+                                <small class="text-secondary">UTRGV Luminary Scholar · 6x President's List</small>
                             </div>
                         </div>
                     
                         <div class="d-flex align-items-center">
                             <div class="icon-box icon-box-success me-3">
-                                <i class="fas fa-microchip fa-xl"></i>
+                                <i class="fas fa-award fa-xl"></i>
                             </div>
                             <div>
-                                <h5 class="fw-bold mb-0">Goal</h5>
-                                <small class="text-secondary">M.S. Electrical Engineering</small>
+                                <h5 class="fw-bold mb-0">NASA ORBIT Finalist</h5>
+                                <small class="text-secondary">$15,000 Award Recipient & Telemetry Lead</small>
                             </div>
                         </div>
                     </div>
@@ -140,40 +138,57 @@
     
             <div class="row g-0">
                 <div class="col-md-3 d-flex flex-column align-items-md-end pe-md-4 mb-3 mb-md-0">
+                    <h5 class="fw-bold text-primary">Summer 2026</h5>
+                    <span class="text-muted small">Jun 2026 - Jul 2026</span>
+                </div>
+                <div class="col-md-9 ps-md-4 border-start border-3 border-light pb-5">
+                    <h4 class="fw-bold">Robotics & Computer Vision Researcher</h4>
+                    <p class="text-muted fw-bold mb-2">USDA REEU Program · University of Texas at San Antonio</p>
+                    <p class="text-secondary">
+                        Engineered an end-to-end autonomous crop sorting and packaging pipeline in partnership with the USDA, bridging real-time vision models with multi-axis industrial robotics.
+                    </p>
+                    <ul class="text-secondary small">
+                        <li>Trained and optimized a real-time YOLOv11 multi-class object detection model for precision crop verification and sorting.</li>
+                        <li>Built a custom Python control library using the uFactorySDK for a uFactory xArm 5 manipulator to translate visual detections into mechanical trajectory paths.</li>
+                        <li>Mapped 3D physical workspace boundaries to implement end-effector centering, collision avoidance, and continuous-path routing for grid-based packaging.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row g-0">
+                <div class="col-md-3 d-flex flex-column align-items-md-end pe-md-4 mb-3 mb-md-0">
                     <h5 class="fw-bold text-primary">Present</h5>
-                    <span class="text-muted small">Aug 2025 - Current</span>
+                    <span class="text-muted small">Aug 2025 - Present</span>
                 </div>
                 <div class="col-md-9 ps-md-4 border-start border-3 border-light pb-5">
                     <h4 class="fw-bold">Undergraduate Teaching Assistant</h4>
-                    <p class="text-muted fw-bold mb-2">University of Texas Rio Grande Valley</p>
+                    <p class="text-muted fw-bold mb-2">Department of Computer Science · University of Texas Rio Grande Valley</p>
                     <p class="text-secondary">
-                        Working under the Department of Computer Science as a teaching assistant, specialized within Automata and Formal Languages.
-                        
+                        Facilitating core computer science courses, currently supporting Automata & Formal Languages, with prior appointments in Software Engineering I and Computer Science I.
                     </p>
                     <ul class="text-secondary small">
-                        <li>Graded and provided Feedback/guidance for topics such as computational models and complexity theory. </li>
-                        <li>Assisted professor in class procedures such as management of lab sessions.</li>
-                        <li>Provide Availability to students for individual or group guidance within subject topics such as desktop-based software and web-based software and their applications.</li>
-                        <li>Has additionally been a Teaching Assistant for Software Engineering 1 and Computer Science 1</li>
+                        <li>Lead laboratory sessions, explain computational models, formal grammars, and complexity theory.</li>
+                        <li>Hold regular technical mentoring hours assisting students with desktop and web application architecture.</li>
+                        <li>Evaluate code submissions, assess programming assignments, and provide structured feedback.</li>
                     </ul>
                 </div>
             </div>
     
             <div class="row g-0">
                 <div class="col-md-3 d-flex flex-column align-items-md-end pe-md-4 mb-3 mb-md-0">
-                    <h5 class="fw-bold">Telemetry Lead</h5>
-                    <span class="text-muted small">Aug 2025 - May 2026</span>
+                    <h5 class="fw-bold">Present</h5>
+                    <span class="text-muted small">Aug 2025 - Present</span>
                 </div>
                 <div class="col-md-9 ps-md-4 border-start border-3 border-light pb-5">
-                    <h4 class="fw-bold">Society of AeroSpace and Robotic Engineers Telemtery Lead</h4>
-                    <p class="text-muted fw-bold mb-2">University of Texas Rio Grande Valley</p>
+                    <h4 class="fw-bold">Telemetry Lead</h4>
+                    <p class="text-muted fw-bold mb-2">Society of Aerospace and Robotic Engineers (SARE) · UTRGV</p>
                     <p class="text-secondary">
-                        Leading the Telemetry Team within the Society of AeroSpace and Robotic Engineers (SARE) to develop and implement telemetry systems for aerospace projects.
+                        Lead telemetry and avionics subteams developing hardware and software telemetry systems for advanced aerospace research initiatives.
                     </p>
                     <ul class="text-secondary small">
-                        <li>Coordinate team meetings and project aspects relating to both Software and Electrical components..</li>
-                        <li>Assist in fundraising within the organization raising 500+ dollars.</li>
-                        <li>Delegating Team tasks to Telemetry members. These tasks contribute to the completion and success of the project.</li>
+                        <li>Secured a <strong>$15,000 prize as a finalist in the NASA ORBIT Competition</strong> by leading electronic and software integration.</li>
+                        <li>Engineered software modules and telemetry validation for Visco-Acoustic Electrospinning for Nanofiber Guidance.</li>
+                        <li>Direct sprint planning, task delegation, and cross-functional reviews across telemetry hardware and embedded firmware teams.</li>
                     </ul>
                 </div>
             </div>
@@ -183,14 +198,15 @@
                     <h5 class="fw-bold">Summer Research</h5>
                     <span class="text-muted small">May 2025 - Aug 2025</span>
                 </div>
-                <div class="col-md-9 ps-md-4 border-start border-3 border-light pb-5">
-                    <h4 class="fw-bold">Algorithm and Self Assembly Research</h4>
-                    <p class="text-muted fw-bold mb-2">University of Texas Rio Grande Valley</p>
+                <div class="col-md-9 ps-md-4 border-start border-3 border-light pb-2">
+                    <h4 class="fw-bold">Algorithms & Self-Assembly Research Assistant</h4>
+                    <p class="text-muted fw-bold mb-2">Department of Computer Science · University of Texas Rio Grande Valley</p>
                     <p class="text-secondary">
-                        Focused within Algorithm and Self Assembly, specifically studying topics such as Self Assembly and Drainability.
+                        Investigated theoretical models of algorithmic self-assembly, focusing on tile drainability and stochastic limits.
                     </p>
                     <ul class="text-secondary small">
-                        <li>Assisted Researchers with the understanding of key principles within the fields, such as self-assembly complexity and probabilistic bounds.</li>
+                        <li>Collaborated with faculty to evaluate self-assembly bounds using probabilistic complexity methods.</li>
+                        <li>Formulated mathematical and algorithmic proofs modeling tile-based computational systems.</li>
                     </ul>
                 </div>
             </div>
@@ -207,6 +223,30 @@
             </div>
     
             <div class="row g-4"> 
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div id="arm-sorting" class="card h-100 shadow-sm">
+                        <img src="assets/arm.jpeg" class="card-img-top" alt="natural">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Automated Vision-Guided Robotic Manipulator</h5>
+                            <p class="card-text">
+                                An industrial sorting pipeline pairing YOLOv11 multi-class crop verification with a 6-DoF uFactory xArm 5 for automated pick, place, and packaging routines.
+                            </p>
+                            <div class="mb-3">
+                                <span class="badge bg-primary">Python</span>
+                                <span class="badge bg-success">YOLOv11</span>
+                                <span class="badge bg-warning text-dark">uFactorySDK</span>
+                                <span class="badge bg-secondary">Robotics Kinematics</span>
+                                <span class="badge bg-accent-orange text-white">Computer Vision</span>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-white border-0">
+                            <a href="https://github.com/carolinemed6/REEUSorting" target="_blank" class="btn btn-outline-dark btn-sm">
+                                <i class="fab fa-github me-1"></i> View Repository
+                            </a>
+                        </div>
+                    </div>
+                </div>
 
                 <div class="col-12 col-md-6 col-lg-4">
                     <div id="Drone" class="card h-100 shadow-sm">
@@ -256,27 +296,6 @@
                 </div>
 
                 <div class="col-12 col-md-6 col-lg-4">
-                    <div id="moody-card" class="card h-100 shadow-sm">
-                        <img src="assets/MoodyMusicIcon.jpeg" class="card-img-top" alt="Moody Music">
-                        <div class="card-body">
-                            <h5 class="card-title fw-bold">Moody Music</h5>
-                            <p class="card-text">
-                                A mobile application that utilizes Spotify's API to play randomized songs dependent on the users mood.
-                            </p>
-                            <div class="mb-3">
-                                <span class="badge bg-info text-dark">Flutter</span>
-                                <span class="badge bg-danger">Spotify API</span>
-                            </div>
-
-                        </div>
-                        <div class="card-footer bg-white border-0">
-                            <a href="https://github.com/CompleteCanoe98/Moody-Music" class="btn btn-outline-dark btn-sm">
-                                <i class="fab fa-github me-1"></i> View Repository</a>
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="col-12 col-md-6 col-lg-4">
                     <div id="deepfake" class="card h-100 shadow-sm">
                         <img src="assets/deepfakePicture.jpg" class="card-img-top" alt="Deepfake Detector">
                         <div class="card-body">
@@ -294,57 +313,66 @@
                             <a href="https://github.com/RodolfoJGonz/FacialVideoDeepfakeDetector?tab=readme-ov-file" class="btn btn-outline-dark btn-sm">
                                 <i class="fab fa-github me-1"></i> View Repository
                             </a>
-                            </div>
+                        </div>
                     </div>
                 </div>
     
-                
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div id="moody-card" class="card h-100 shadow-sm">
+                        <img src="assets/MoodyMusicIcon.jpeg" class="card-img-top" alt="Moody Music">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Moody Music</h5>
+                            <p class="card-text">
+                                A mobile application that utilizes Spotify's API to play randomized songs dependent on the users mood.
+                            </p>
+                            <div class="mb-3">
+                                <span class="badge bg-info text-dark">Flutter</span>
+                                <span class="badge bg-danger">Spotify API</span>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-white border-0">
+                            <a href="https://github.com/CompleteCanoe98/Moody-Music" class="btn btn-outline-dark btn-sm">
+                                <i class="fab fa-github me-1"></i> View Repository</a>
+                        </div>
+                    </div>
+                </div>
     
-            </div> </div> 
+            </div> 
+        </div> 
     </section>
 
-    
-
-            <section id="contact" class="py-5 bg-dark text-white">
-                <div class="container">
-                    <div class="row text-center text-md-start">
-                        
-                        <div class="col-md-6 mb-4 mb-md-0">
-                            <h2 class="fw-bold">Let's Connect</h2>
-                            <p class="text-secondary">
-                                I'm currently looking for opportunities in Machine Learning and Network Development.
-                            </p>
-                            <a href="mailto:nathanfavian@gmail.com" class="btn btn-outline-light mt-2">
-                                <i class="fas fa-envelope me-2"></i> Email Me
-                            </a>
-                        </div>
-                        
-                        <!---TODO MAKE LINKEDIN--->
-                        <div class="col-md-6 d-flex align-items-center justify-content-center justify-content-md-end">
-                            <div class="d-flex gap-4">
-                                <!------
-                                <a href="#" class="text-white text-decoration-none fs-2 social-icon">
-                                    <i class="fab fa-linkedin"></i>
-                                </a>
-                                ----->
-                                <a href="https://github.com/CompleteCanoe98" class="text-white text-decoration-none fs-2 social-icon">
-                                    <i class="fab fa-github"></i>
-                                </a>
-                            </div>
-                        </div>
-                        
-                    </div>
-                    
-                    <div class="row mt-5 pt-4 border-top border-secondary text-center">
-                        <div class="col">
-                            <p class="text-secondary small mb-0">&copy; 2025 Nathaniel DeLeon. All rights reserved.</p>
-                        </div>
+    <section id="contact" class="py-5 bg-dark text-white">
+        <div class="container">
+            <div class="row text-center text-md-start">
+                
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <h2 class="fw-bold">Let's Connect</h2>
+                    <p class="text-secondary">
+                        I'm currently looking for opportunities in Perception and Robotic Automation.
+                    </p>
+                    <a href="mailto:nathanfavian@gmail.com" class="btn btn-outline-light mt-2">
+                        <i class="fas fa-envelope me-2"></i> Email Me
+                    </a>
+                </div>
+                
+                <div class="col-md-6 d-flex align-items-center justify-content-center justify-content-md-end">
+                    <div class="d-flex gap-4">
+                        <a href="https://github.com/CompleteCanoe98" class="text-white text-decoration-none fs-2 social-icon" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <!-- Added LinkedIn Tag -->
+                        <a href="YOUR_LINKEDIN_URL_HERE" class="text-white text-decoration-none fs-2 social-icon" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
                     </div>
                 </div>
-            </section>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    
-    <script src="js/main.js"></script>
-</body>
-</html>
+                
+            </div>
+            
+            <div class="row mt-5 pt-4 border-top border-secondary text-center">
+                <div class="col">
+                    <p class="text-secondary small mb-0">&copy; 2026 Nathaniel DeLeon. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </section>
