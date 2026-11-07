@@ -147,6 +147,13 @@ section {
     border-color: blue!important;
 }
 
+#arm-sorting:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px orange!important;
+    border-color: orange!important;
+}
+
+
 /* ===========================
    5. SOCIAL ICONS
    =========================== */
